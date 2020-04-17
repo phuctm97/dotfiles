@@ -10,3 +10,5 @@
 
 . install-antigen.sh
 
+. install-fonts.sh
+
