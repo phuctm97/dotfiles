@@ -13,4 +13,6 @@ readonly CFG="$(cd "$(dirname "$SRC")/cfg" >/dev/null 2>&1 && pwd)"
 
 . $SRC/install-fonts.sh
 
+. $SRC/install-tools.sh
+
 . $SRC/create-syslinks.sh
