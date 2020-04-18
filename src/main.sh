@@ -1,13 +1,15 @@
 #!/bin/bash
 
-. enable-sudo-auth-touch-id.sh
+readonly DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 
-. install-homebrew.sh
+. $DIR/enable-sudo-auth-touch-id.sh
 
-. fix-zsh-permissions.sh
+. $DIR/install-homebrew.sh
 
-. install-antigen.sh
+. $DIR/fix-zsh-permissions.sh
 
-. install-fonts.sh
+. $DIR/install-antigen.sh
 
-. create-syslinks.sh
+. $DIR/install-fonts.sh
+
+. $DIR/create-syslinks.sh
