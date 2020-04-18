@@ -10,7 +10,7 @@ done
 
 # Where to install dotfiles (clone dotfiles repository) from and to.
 readonly DOTFILES_REPO="https://github.com/phuctm97/dotfiles.git"
-readonly DOTFILES_DIR="$HOME/dotfiles"
+readonly DOTFILES_DIR="$HOME/.dotfiles"
 
 # Clone dotfiles repository.
 mkdir -p $DOTFILES_DIR
