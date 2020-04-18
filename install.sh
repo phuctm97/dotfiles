@@ -2,7 +2,7 @@
 
 # Install XCode Command Line Tools and wait til it's finished.
 # XCode Command Line Tools are required for all next steps including Git clone, executing Python
-# scripts, installing Homebrew, etc.``
+# scripts, installing Homebrew, etc.
 xcode-select --install &> /dev/null
 until $(xcode-select --print-path &> /dev/null); do
   sleep 5;
