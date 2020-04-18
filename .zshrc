@@ -64,4 +64,3 @@ POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='green'
 # Apply Antigen.
 source /usr/local/share/antigen/antigen.zsh
 antigen init $HOME/.antigenrc
-

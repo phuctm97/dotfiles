@@ -6,7 +6,7 @@
 # This uses Python for simpler programming interface, it can be executed by macOS embedded
 # Python without any requirement.
 
-# The following Python script checks whether 'auth sufficient pam_tid.so' is already 
+# The following Python script checks whether 'auth sufficient pam_tid.so' is already
 # configured, if yes, it does nothing, if no, it finds the best place and format to append
 # the line to the file.
 
@@ -30,11 +30,10 @@ def main():
     if m != None:
       index = i
       template = m.group(0)
-  
+
   contents.insert(index + 1, template + 'pam_tid.so\n')
   with open(pam_cfg, 'w') as f:
     f.write(''.join(contents))
 
 main()
 HEREDOC
-
