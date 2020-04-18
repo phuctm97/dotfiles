@@ -6,7 +6,7 @@ antigen bundle git
 antigen bundle pip
 antigen bundle command-not-found
 
-# 3rd Bundles. 
+# 3rd Bundles.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load a theme.
@@ -14,4 +14,3 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Tell Antigen that everything's done.
 antigen apply
-
