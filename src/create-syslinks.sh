@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ln -s $DOTFILES_DIR/.zshrc ~
-ln -s $DOTFILES_DIR/.antigenrc ~
+ln -s $CFG/.zshrc ~
+ln -s $CFG/.antigenrc ~
