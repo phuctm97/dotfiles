@@ -1,15 +1,16 @@
 #!/bin/bash
 
-readonly DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+readonly SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+readonly CFG="$(cd "$(dirname "$SRC")/cfg" >/dev/null 2>&1 && pwd)"
 
-. $DIR/enable-sudo-auth-touch-id.sh
+. $SRC/enable-sudo-auth-touch-id.sh
 
-. $DIR/install-homebrew.sh
+. $SRC/install-homebrew.sh
 
-. $DIR/fix-zsh-permissions.sh
+. $SRC/fix-zsh-permissions.sh
 
-. $DIR/install-antigen.sh
+. $SRC/install-antigen.sh
 
-. $DIR/install-fonts.sh
+. $SRC/install-fonts.sh
 
-. $DIR/create-syslinks.sh
+. $SRC/create-syslinks.sh
