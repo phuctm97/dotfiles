@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Modules' aliases.
-declare -r DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-declare -r SRC="$DIR/src"
-declare -r CFG="$DIR/cfg"
-
 are_xcode_command_line_tools_installed() {
   xcode-select --print-path &> /dev/null
 }
@@ -25,19 +20,21 @@ install() {
     done
   fi
 
-  . $SRC/enable-sudo-auth-touch-id.sh
+  . src/enable-sudo-auth-touch-id.sh
 
-  . $SRC/install-homebrew.sh
+  . src/install-homebrew.sh
 
-  . $SRC/fix-zsh-permissions.sh
+  . src/fix-zsh-permissions.sh
 
-  . $SRC/install-antigen.sh
+  . src/install-antigen.sh
 
   #. $SRC/install-fonts.sh
 
   #. $SRC/install-tools.sh
 
-  . $SRC/create-symlinks.sh
+  . src/create-symlinks.sh
 }
 
+# Change into dotfiles and install.
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 install "$@"
