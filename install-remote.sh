@@ -28,15 +28,15 @@ install() {
 
   # Remove existing dotfiles.
   if [ -d "$DOTFILES_DIR" ]; then
-    sudo rm -rf $DOTFILES_DIR
+    sudo rm -rf "$DOTFILES_DIR"
   elif [ -f "$DOTFILES_DIR" ]; then
-    sudo rm $DOTFILES_DIR
+    sudo rm "$DOTFILES_DIR"
   fi
 
   # Clone dotfiles repository.
-  mkdir -p $DOTFILES_DIR
-  cd $DOTFILES_DIR
-  git clone $DOTFILES_REPO .
+  mkdir -p "$DOTFILES_DIR"
+  cd "$DOTFILES_DIR" || return 1
+  git clone "$DOTFILES_REPO" . &> /dev/null
 
   # Source install-local.sh.
   . install-local.sh
