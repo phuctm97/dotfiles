@@ -33,9 +33,9 @@ install() {
 
   . $SRC/install-antigen.sh
 
-  . $SRC/install-fonts.sh
+  #. $SRC/install-fonts.sh
 
-  . $SRC/install-tools.sh
+  #. $SRC/install-tools.sh
 
   . $SRC/create-syslinks.sh
 }
