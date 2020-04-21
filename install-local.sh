@@ -37,7 +37,7 @@ install() {
 
   . src/install-antigen.sh
 
-  #. $SRC/install-fonts.sh
+  . src/install-fonts.sh
 
   #. $SRC/install-tools.sh
 
