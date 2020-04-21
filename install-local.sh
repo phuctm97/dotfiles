@@ -37,7 +37,7 @@ install() {
 
   #. $SRC/install-tools.sh
 
-  . $SRC/create-syslinks.sh
+  . $SRC/create-symlinks.sh
 }
 
 install "$@"
