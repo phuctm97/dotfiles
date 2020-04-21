@@ -7,6 +7,19 @@ declare -r SPINNER_CHARS="/-\|"
 declare -r SPINNER_DELAY=0.2
 declare -r TMP_DIR="$(mktemp -d)"
 
+ask_for_sudo() {
+  # Ask for the administrator password upfront.
+  sudo -v &> /dev/null
+
+  # Update existing `sudo` time stamp until this script has finished.
+  # See also: https://gist.github.com/cowboy/3118588.
+  while true; do
+    sudo -n true
+    sleep 60
+    kill -0 "$$" || exit
+  done &> /dev/null &
+}
+
 print_in_color() {
   printf "%b" "$(tput setaf "$2" 2> /dev/null)" "$1" "$(tput sgr0 2> /dev/null)"
 }
