@@ -25,6 +25,10 @@ install() {
     execute "install_xcode_command_line_tools" "Install XCode Command Line Tools"
   fi
 
+  # Ans for sudo upfront.
+  ask_for_sudo
+
+  # Next steps.
   . src/enable-sudo-auth-touch-id.sh
 
   . src/install-homebrew.sh
