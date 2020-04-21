@@ -10,7 +10,8 @@
 # configured, if yes, it does nothing, if no, it finds the best place and format to append
 # the line to the file.
 
-sudo python <<HEREDOC
+enable_sudo_auth_touch_id() {
+  sudo python <<HEREDOC
 import re
 
 pam_cfg = '/etc/pam.d/sudo'
@@ -37,3 +38,6 @@ def main():
 
 main()
 HEREDOC
+}
+
+execute "enable_sudo_auth_touch_id" "Enable authenticating sudo with Touch ID"

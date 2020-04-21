@@ -1,6 +1,5 @@
 #!/bin/bash
 
-declare -r INDENT="  "
 declare -r SUCCESS_CHAR="✔"
 declare -r WARNING_CHAR="!"
 declare -r ERROR_CHAR="✖"
@@ -28,20 +27,16 @@ print_in_yellow() {
   print_in_color "$1" 3
 }
 
-print_question() {
-  print_in_yellow "${INDENT}[?] $1"
-}
-
 print_success() {
-  print_in_green "${INDENT}[${SUCCESS_CHAR}] $1\n"
+  print_in_green "[$SUCCESS_CHAR] $1\n"
 }
 
 print_warning() {
-  print_in_yellow "${INDENT}[${WARNING_CHAR}] $1\n"
+  print_in_yellow "[$WARNING_CHAR] $1\n"
 }
 
 print_error() {
-  print_in_red "${INDENT}[${ERROR_CHAR}] $1\n"
+  print_in_red "[$ERROR_CHAR] $1\n"
 }
 
 print_result() {
@@ -56,7 +51,7 @@ print_result() {
 
 print_error_stream() {
   while read -r line; do
-    print_in_red "${INDENT} ↳ $line\n"
+    print_in_red " ↳ $line\n"
   done
 }
 
@@ -85,7 +80,7 @@ show_spinner() {
   # Display spinner while the commands are being executed.
   while kill -0 "$pid" &> /dev/null; do
     # Print frame.
-    frame="${INDENT}[${frames:i++%n_frames:1}] $msg"
+    frame="[${frames:i++%n_frames:1}] $msg"
     printf "%s" "$frame"
     sleep $SPINNER_DELAY
 

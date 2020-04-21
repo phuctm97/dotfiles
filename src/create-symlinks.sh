@@ -1,10 +1,11 @@
 #!/bin/bash
 
-main() {
-  # Create symlinks.
-  ln -sfn $CFG/.zshrc ~
-  ln -sfn $CFG/.antigenrc ~
-  ln -sfn $CFG/.gitconfig ~
+create_symlinks() {
+  local -r cwd="$(pwd)"
+
+  ln -sfn "$cwd/cfg/.zshrc" ~
+  ln -sfn "$cwd/cfg/.antigenrc" ~
+  ln -sfn "$cwd/cfg/.gitconfig" ~
 }
 
-main "$@"
+execute "create_symlinks" "Create symlinks"
