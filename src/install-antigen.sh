@@ -1,16 +1,16 @@
 #!/bin/bash
 
 main() {
-  local cwd="$(pwd)"
+  local antigen_zsh="/usr/local/share/antigen/antigen.zsh"
+  if [ -f "$antigen_zsh" ]; then
+    return
+  fi
 
   # Install Antigen.
-  cd /usr/local/share
-  mkdir antigen
-  sudo chmod -R 755 antigen
-  cd antigen
-  curl -L git.io/antigen > antigen.zsh
-
-  cd $cwd
+  local antigen_dir="$(dirname \"$antigen_zsh\")"
+  mkdir -p "$antigen_dir"
+  sudo chmod -R 755 "$antigen_dir"
+  curl -o "$antigen_zsh" -L git.io/antigen
 }
 
 main "$@"
