@@ -1,13 +1,10 @@
 #!/bin/bash
 
 main() {
-  local cwd="$(pwd)"
-
   # Fix permission issues with ZSH.
-  cd /usr/local/share
-  sudo chmod -R 755 zsh
-
-  cd $cwd
+  local zsh_dir="/usr/local/share/zsh"
+  sudo chmod -R 755 "$zsh_dir"
+  sudo chown -R $(whoami) "$zsh_dir"
 }
 
 main "$@"

@@ -7,10 +7,11 @@ main() {
   fi
 
   # Install Antigen.
-  local antigen_dir="$(dirname \"$antigen_zsh\")"
-  mkdir -p "$antigen_dir"
+  local antigen_dir="$(dirname "$antigen_zsh")"
+  sudo mkdir -p "$antigen_dir"
   sudo chmod -R 755 "$antigen_dir"
-  curl -o "$antigen_zsh" -L git.io/antigen
+  sudo chown -R $(whoami) "$antigen_dir"
+  curl -o "$antigen_zsh" -L https://git.io/antigen
 }
 
 main "$@"
