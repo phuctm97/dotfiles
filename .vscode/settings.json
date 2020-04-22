@@ -1,6 +1,13 @@
 {
+  "files.associations": {
+    ".antigenrc": "shellscript"
+  },
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
-  "shellcheck.customArgs": [ "-x", "-e", "SC2155" ]
+  "shellcheck.customArgs": [ "-x" ],
+  "shellcheck.exclude": [ 2155, 2091 ],
+  "shellcheck.ignorePatterns": {
+    "**/.*rc": true
+  }
 }
