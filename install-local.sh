@@ -18,6 +18,7 @@ run() {
   src/fonts.sh
   src/screen-savers.sh
   src/slack.sh
+  src/vlc.sh
 }
 
 run "$@"
