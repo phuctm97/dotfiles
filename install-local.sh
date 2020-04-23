@@ -16,6 +16,7 @@ run() {
   src/docker.sh
   src/fonts.sh
   src/screen-savers.sh
+  src/slack.sh
 }
 
 run "$@"
