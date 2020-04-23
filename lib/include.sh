@@ -8,10 +8,11 @@ run() {
   cd "$(dirname "${BASH_SOURCE[0]}")" \
     && . common.sh \
     && . sudo.sh \
+    && . symlink.sh \
     && . xcode.sh \
     && . brew.sh \
     && . zsh.sh \
-    && . symlink.sh
+    && . code.sh
 
   # Go back to where it came from.
   cd "$cwd" || exit 1

@@ -8,5 +8,5 @@ set_heading "Setup ZSH"
 fix_zsh_perms
 brew_install antigen
 
-create_symlink ../cfg/.zshrc ~
-create_symlink ../cfg/.antigenrc ~
+symlink ../cfg/.zshrc ~
+symlink ../cfg/.antigenrc ~

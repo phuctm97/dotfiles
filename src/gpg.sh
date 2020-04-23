@@ -9,4 +9,4 @@ brew_install \
   gnupg \
   pinentry-mac
 
-create_symlink ../cfg/gpg-agent.conf ~
+symlink ../cfg/gpg-agent.conf ~
