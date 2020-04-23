@@ -1,4 +1,16 @@
-# Config Powerlevel9k theme.
+# Aliases.
+function gcmDb {
+  git fetch --all --prune
+
+  local -r b="$(git rev-parse --abbrev-ref HEAD)"
+  if [ "$b" != "master" ]; then
+    git fetch origin master:master
+    git checkout master
+    git branch -D "$b"
+  fi
+}
+
+# Configure Powerlevel9k.
 function sp {
   git branch > /dev/null 2>&1 || return 1
   git config user.initials
