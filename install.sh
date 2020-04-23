@@ -1,18 +1,17 @@
 #!/bin/bash
 
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-  && . src/lib/include.sh
+  && . lib/include.sh
 
 run() {
-  src/install/sudo.sh
-  src/install/xcode.sh
-  src/install/brew.sh
-  src/install/zsh.sh
-  src/install/gpg.sh
-  src/install/cli-tools.sh
-  src/install/fonts.sh
-  src/install/screen-savers.sh
-  src/config/symlinks.sh
+  src/sudo.sh
+  src/xcode.sh
+  src/brew.sh
+  src/zsh.sh
+  src/gpg.sh
+  src/cli-tools.sh
+  src/fonts.sh
+  src/screen-savers.sh
 }
 
 run "$@"

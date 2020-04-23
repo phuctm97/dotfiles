@@ -8,3 +8,5 @@ set_heading "Install GnuPG"
 brew_install \
   gnupg \
   pinentry-mac
+
+create_symlink ../cfg/gpg-agent.conf ~
