@@ -3,7 +3,12 @@ antigen use oh-my-zsh
 
 # Bundles from the oh-my-zsh's library.
 antigen bundle git
+antigen bundle golang
+antigen bundle node
+antigen bundle npm
+antigen bundle yarn
 antigen bundle pip
+antigen bundle docker
 antigen bundle command-not-found
 
 # 3rd Bundles.

@@ -10,6 +10,7 @@ run() {
   src/zsh.sh
   src/gnupg.sh
   src/go.sh
+  src/node.sh
   src/cli-tools.sh
   src/chrome.sh
   src/code.sh
