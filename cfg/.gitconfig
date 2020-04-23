@@ -1,3 +1,6 @@
 [user]
 	name = phuctm97
 	email = 25026967+phuctm97@users.noreply.github.com
+	signingkey = 04360025C06DCEDDF4DCE68CEDEFE304544A0AC8
+[commit]
+	gpgsign = true
