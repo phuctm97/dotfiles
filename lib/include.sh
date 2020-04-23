@@ -10,6 +10,7 @@ run() {
     && . sudo.sh \
     && . xcode.sh \
     && . brew.sh \
+    && . zsh.sh \
     && . symlink.sh
 
   # Go back to where it came from.

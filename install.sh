@@ -10,6 +10,8 @@ run() {
   src/zsh.sh
   src/gpg.sh
   src/cli-tools.sh
+  src/chrome.sh
+  src/code.sh
   src/fonts.sh
   src/screen-savers.sh
 }
