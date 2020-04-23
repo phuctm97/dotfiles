@@ -11,6 +11,7 @@ run() {
   src/install/gpg.sh
   src/install/cli-tools.sh
   src/install/fonts.sh
+  src/install/screen-savers.sh
   src/config/symlinks.sh
 }
 
