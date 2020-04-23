@@ -1,4 +1,7 @@
-# ~•~ dotfiles &nbsp; ![build][build] ![license][license]
+# ~•~ dotfiles
+
+![build][build]
+![license][license]
 
 💻  My delightful macOS Catalina dotfiles.
 
