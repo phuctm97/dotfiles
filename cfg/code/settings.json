@@ -11,6 +11,7 @@
     "git.allowForcePush": true,
     "git.enableCommitSigning": true,
     "git.enableSmartCommit": true,
+    "git.autofetch": true,
     "git.fetchOnPull": true,
     "editor.tabSize": 2,
     "files.trimTrailingWhitespace": true,

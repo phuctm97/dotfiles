@@ -1,0 +1,20 @@
+name: CI
+
+on: push
+
+jobs:
+  check:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Shellcheck
+        run: |
+          echo "::add-matcher::.github/workflows/problem-matchers.json"
+          find . -type f -path "*.sh" -exec \
+            shellcheck \
+            -e SC1091 \
+            -e SC2091 \
+            -e SC2155 \
+            {} +
+          echo "::remove-matcher owner=shellcheck::"
