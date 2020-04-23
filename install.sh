@@ -8,10 +8,11 @@ run() {
   src/xcode.sh
   src/brew.sh
   src/zsh.sh
-  src/gpg.sh
+  src/gnupg.sh
   src/cli-tools.sh
   src/chrome.sh
   src/code.sh
+  src/docker.sh
   src/fonts.sh
   src/screen-savers.sh
 }

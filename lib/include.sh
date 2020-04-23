@@ -12,7 +12,8 @@ run() {
     && . xcode.sh \
     && . brew.sh \
     && . zsh.sh \
-    && . code.sh
+    && . code.sh \
+    && . gnupg.sh
 
   # Go back to where it came from.
   cd "$cwd" || exit 1

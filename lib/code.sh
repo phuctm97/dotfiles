@@ -1,8 +1,15 @@
 #!/bin/bash
 
-symlink_code_settings() {
-  local -r code_settings_dir="$HOME/Library/Application Support/Code/User"
-  mkdir -p "$code_settings_dir"
+code_symlink_conf() {
+  local -r code_conf_dir="$HOME/Library/Application Support/Code/User"
+  mkdir -p "$code_conf_dir"
 
-  symlink "$1" "$code_settings_dir"
+  symlink "$1" "$code_conf_dir"
+}
+
+code_install_extensions() {
+  for ext in "$@"
+  do
+    code --install-extension "$ext"
+  done
 }
