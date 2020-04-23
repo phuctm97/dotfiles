@@ -1,4 +1,4 @@
-# ~•~ dotfiles ![build][build]
+# ~•~ dotfiles &nbsp; ![build][build] ![license][license]
 
 💻  My delightful macOS Catalina dotfiles.
 
@@ -17,6 +17,7 @@ Copyright © 2020 - present, Phuc (Minh) Tran. All rights reserved.
 <!-- Badges -->
 
 [build]: https://img.shields.io/github/workflow/status/phuctm97/dotfiles/CI
+[license]: https://img.shields.io/github/license/phuctm97/dotfiles
 
 <!-- Links -->
 
