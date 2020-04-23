@@ -9,4 +9,5 @@ fix_zsh_perms
 brew_install antigen
 
 symlink ../cfg/.zshrc ~
+symlink ../cfg/.zshenv ~
 symlink ../cfg/.antigenrc ~
