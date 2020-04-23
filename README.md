@@ -19,8 +19,8 @@ Copyright © 2020 - present, Phuc (Minh) Tran. All rights reserved.
 
 <!-- Badges -->
 
-[build]: https://img.shields.io/github/workflow/status/phuctm97/dotfiles/CI
-[license]: https://img.shields.io/github/license/phuctm97/dotfiles
+[build]: https://badgen.net/github/checks/phuctm97/dotfiles
+[license]: https://badgen.net/github/license/phuctm97/dotfiles
 
 <!-- Links -->
 
