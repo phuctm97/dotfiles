@@ -6,3 +6,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 set_heading "Create Syslinks"
 
 create_symlink ../../cfg/.antigenrc ~
+create_symlink ../../cfg/.zshrc ~
