@@ -12,7 +12,7 @@ jobs:
         run: |
           echo "::add-matcher::.github/workflows/problem-matchers.json"
           find . -type f -path "*.sh" -exec \
-            shellcheck \
+            shellcheck -s bash \
             -e SC1091 \
             -e SC2091 \
             -e SC2155 \

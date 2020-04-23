@@ -17,6 +17,8 @@
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(64, 64, 64, 1.0)",
     "vim.easymotion": true,
     "vim.easymotionMarkerFontFamily": "Dank Mono, Operator Mono, Fira Code, monospace",
     "vim.easymotionMarkerYOffset": 14,
