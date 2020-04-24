@@ -8,6 +8,7 @@ set_heading "Setup ZSH"
 fix_zsh_perms
 brew_install antigen
 
-symlink ../cfg/.zshrc ~
 symlink ../cfg/.zshenv ~
+symlink ../cfg/.zshrc ~
 symlink ../cfg/.antigenrc ~
+symlink ../cfg/.p10k.zsh ~
