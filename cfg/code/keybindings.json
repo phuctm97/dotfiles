@@ -14,23 +14,33 @@
     "command": "-workbench.action.files.newUntitledFile"
   },
   {
-    "key": "ctrl+j",
+    "key": "shift+j",
     "command": "selectNextSuggestion",
     "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
   },
   {
-    "key": "ctrl+k",
+    "key": "shift+k",
     "command": "selectPrevSuggestion",
     "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
   },
   {
-    "key": "ctrl+j",
+    "key": "shift+j",
     "command": "workbench.action.quickOpenNavigateNext",
     "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+k",
+    "key": "shift+k",
     "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
+  },
+  {
+    "key": "cmd+shift+k",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
   }
 ]
