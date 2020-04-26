@@ -7,4 +7,5 @@ set_heading "Install Other CLI Tools"
 
 brew_install \
   neofetch \
-  shellcheck
+  shellcheck \
+  fzf

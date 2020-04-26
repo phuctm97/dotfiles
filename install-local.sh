@@ -11,6 +11,7 @@ run() {
   src/gnupg.sh
   src/go.sh
   src/node.sh
+  src/vim.sh
   src/cli-tools.sh
   src/chrome.sh
   src/code.sh
