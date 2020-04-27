@@ -17,7 +17,9 @@ code_install_extensions \
   equinusocio.vsc-material-theme-icons \
   vscodevim.vim \
   ms-azuretools.vscode-docker \
-  timonwong.shellcheck
+  timonwong.shellcheck \
+  dbaeumer.vscode-eslint \
+  esbenp.prettier-vscode
 
 # Enable key-repeating for VSCode Vim.
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false &> /dev/null || true
