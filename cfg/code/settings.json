@@ -1,13 +1,14 @@
 {
     "window.zoomLevel": 0.5,
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Dank Mono, Operator Mono, Fira Code, monospace",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
     "terminal.integrated.fontFamily": "SauceCodePro Nerd Font, FiraCode Nerd Font, monospace",
     "terminal.integrated.fontSize": 13,
+    "workbench.activityBar.visible": false,
     "git.allowForcePush": true,
     "git.enableCommitSigning": true,
     "git.enableSmartCommit": true,
@@ -17,6 +18,10 @@
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
+    "files.associations": {
+        ".vimrc": "viml",
+        "*Dockerfile": "dockerfile"
+    },
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.color": "rgba(64, 64, 64, 1.0)",
     "vim.easymotion": true,

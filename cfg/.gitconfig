@@ -4,3 +4,5 @@
 	signingkey = 04360025C06DCEDDF4DCE68CEDEFE304544A0AC8
 [commit]
 	gpgsign = true
+[core]
+	editor = nvim

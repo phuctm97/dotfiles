@@ -5,16 +5,17 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 set_heading "Install VSCode"
 
+# Install VSCode.
 brew_cask_install visual-studio-code
 
+# Symlink configs.
 code_symlink_conf ../cfg/code/settings.json
 code_symlink_conf ../cfg/code/keybindings.json
 
 # Install extensions.
 code_install_extensions \
-  Equinusocio.vsc-material-theme \
-  Equinusocio.vsc-community-material-theme \
-  equinusocio.vsc-material-theme-icons \
+  jdinhlife.gruvbox \
+  PKief.material-icon-theme \
   vscodevim.vim \
   ms-azuretools.vscode-docker \
   timonwong.shellcheck \

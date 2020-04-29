@@ -12,3 +12,4 @@ symlink ../cfg/.zshenv ~
 symlink ../cfg/.zshrc ~
 symlink ../cfg/.antigenrc ~
 symlink ../cfg/.p10k.zsh ~
+symlink ../cfg/.gitconfig ~
