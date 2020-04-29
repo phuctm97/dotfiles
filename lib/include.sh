@@ -12,6 +12,7 @@ run() {
     && . xcode.sh \
     && . brew.sh \
     && . zsh.sh \
+    && . nvim.sh \
     && . code.sh \
     && . gnupg.sh
 

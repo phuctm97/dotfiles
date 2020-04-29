@@ -1,4 +1,10 @@
 [
+  // Activity bar actions.
+  {
+    "key": "cmd+shift+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  // File explorer actions.
   {
     "key": "cmd+n",
     "command": "explorer.newFile",
@@ -9,19 +15,16 @@
     "command": "explorer.newFolder",
     "when": "explorerViewletFocus"
   },
-  {
-    "key": "cmd+n",
-    "command": "-workbench.action.files.newUntitledFile"
-  },
+  // Quick open & suggestion actions.
   {
     "key": "shift+j",
     "command": "selectNextSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    "when": "editorTextFocus && suggestWidgetVisible && suggestWidgetMultipleSuggestions "
   },
   {
     "key": "shift+k",
     "command": "selectPrevSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    "when": "editorTextFocus && suggestWidgetVisible && suggestWidgetMultipleSuggestions"
   },
   {
     "key": "shift+j",
@@ -33,14 +36,26 @@
     "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
   },
+  // Terminal actions.
   {
-    "key": "cmd+shift+k",
+    "key": "cmd+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+j",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   },
   {
-    "key": "cmd+shift+j",
+    "key": "shift+k",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
+  },
+  // Document actions.
+  {
+    "key": "ctrl+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus && editorHasDocumentFormattingProvider && !editorReadonly"
   }
 ]

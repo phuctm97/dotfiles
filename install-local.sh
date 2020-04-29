@@ -13,6 +13,7 @@ run() {
   src/node.sh
   src/go.sh
   src/vim.sh
+  src/nvim.sh
   src/cli-tools.sh
   src/docker.sh
   src/code.sh
