@@ -16,6 +16,7 @@ run() {
   src/nvim.sh
   src/cli-tools.sh
   src/docker.sh
+  src/kitty.sh
   src/code.sh
   src/chrome.sh
   src/slack.sh
