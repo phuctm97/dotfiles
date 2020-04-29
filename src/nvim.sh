@@ -7,5 +7,6 @@ set_heading "Install Neovim"
 
 brew_install neovim
 
-nvim_symlink_conf ../cfg/nvim/init.vim
+mkdir -p "$HOME/.config"
+symlink ../cfg/nvim "$HOME/.config/nvim"
 nvim --headless +PlugInstall +qa
