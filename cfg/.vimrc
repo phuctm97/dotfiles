@@ -7,17 +7,21 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 
 " Apply vim-plug.
 call plug#end()
 
 " Configure vim.
+set termguicolors
+syntax on
 set number
 set relativenumber
+set background=dark
 
 " Configure theme.
-syntax on
-let g:onedark_termcolors=256
-let g:airline_theme='onedark'
-colorscheme onedark
+let g:gruvbox_termcolors=16
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_light='hard'
+colorscheme gruvbox
