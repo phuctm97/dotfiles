@@ -6,3 +6,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 set_heading "Install Docker"
 
 brew_cask_install docker
+brew_install docker-compose

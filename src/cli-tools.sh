@@ -6,6 +6,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 set_heading "Install Other CLI Tools"
 
 brew_install \
+  github/gh/gh \
   neofetch \
   shellcheck \
-  fzf
+  fzf \
+  fd
