@@ -1,4 +1,6 @@
-" Init vim-plug.
+""" vim-plug.
+
+" Init.
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'tpope/vim-surround'
@@ -14,17 +16,28 @@ Plug 'morhetz/gruvbox'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 
-" Apply vim-plug.
+" Apply.
 call plug#end()
 
-" Configure vim.
+" ---
+
+""" Configure vim.
+
+" Enable true color and syntax highlighting.
 set termguicolors
 syntax on
+
+" Enable relative number.
 set number
 set relativenumber
-set background=dark
 
-" Configure theme.
+" Use system's clipboard by default.
+set clipboard=unnamedplus
+
+" ---
+
+""" Configure theme.
+set background=dark
 let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark='hard'
 let g:gruvbox_contrast_light='hard'
