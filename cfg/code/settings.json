@@ -22,6 +22,21 @@
         ".vimrc": "viml",
         "*Dockerfile": "dockerfile"
     },
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "<leader>", "<leader>", "f" ],
+            "commands": [ "editor.action.formatDocument" ]
+        },
+        {
+            "before": [ "_" ],
+            "commands": [ "workbench.action.previousEditor" ]
+        },
+        {
+            "before": [ "+" ],
+            "commands": [ "workbench.action.nextEditor" ]
+        }
+    ],
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.color": "rgba(64, 64, 64, 1.0)",
     "vim.easymotion": true,
