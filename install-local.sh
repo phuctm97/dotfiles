@@ -10,7 +10,6 @@ run() {
   src/fonts.sh
   src/gnupg.sh
   src/zsh.sh
-  src/node.sh
   src/go.sh
   src/nvim.sh
   src/cli-tools.sh
