@@ -44,5 +44,10 @@
     "vim.easymotionMarkerYOffset": 14,
     "vim.easymotionMarkerHeight": 16,
     "vim.easymotionMarkerFontSize": "13",
-    "vim.surround": true
+    "vim.surround": true,
+    "go.useLanguageServer": true,
+    "cSpell.userWords": [
+        "archanan",
+        "toolchain"
+    ]
 }
